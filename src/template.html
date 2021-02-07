@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="theme-color" content="#3660AA">
+
+	%sapper.base%
+
+	<link rel="stylesheet" href="global.css">
+	<link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<!-- Sapper creates a <script> tag containing `src/client.js`
+	     and anything else it needs to hydrate the app and
+	     initialise the router -->
+	%sapper.scripts%
+
+	<!-- Sapper generates a <style> tag containing critical CSS
+	     for the current page. CSS for the rest of the app is
+	     lazily loaded when it precaches secondary pages -->
+	<style>
+	:root {
+		--highlight: #3E70BD;
+		--important: #D54043;
+		--bg: #FFF;
+		--fg: #444;
+		font-size: 10px;
+		font-family: arial, helvetica, sans;
+	}
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--highlight: #6195E6;
+			--bg: #222;
+			--fg: #EEE;
+		}
+	}
+
+	body {
+		display: block;
+		padding: 0;
+		margin: 0;
+		color: var(--fg);
+		background: var(--bg);
+	}
+	.hidden {
+		display: none;
+	}
+	.floating-image {
+		max-width: 400px;
+		float: right;
+		margin-left: 1.0rem;
+	}
+	</style>
+	%sapper.styles%
+
+	<!-- This contains the contents of the <svelte:head> component, if
+	     the current page has one -->
+	%sapper.head%
+</head>
+<body>
+	<!-- The application will be rendered inside this element,
+	     because `src/client.js` references it -->
+	<div id="sapper">%sapper.html%</div>
+</body>
+</html>
