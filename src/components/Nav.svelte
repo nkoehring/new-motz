@@ -21,19 +21,28 @@
 		border-bottom: 3rem solid var(--highlight);
 	}
 
+	li {
+	  display: block;
+		padding-top: .5rem;
+	}
+
 	a {
 		display: block;
 		padding: .2em .2em .2em .3em;
 		text-decoration: none;
-		color: var(--fg);
+		color: var(--bg);
 		border-bottom: 1px solid var(--fg);
 	}
+
 	[aria-current] {
-		padding: .5em;
-		color: var(--highlight);
 		background: var(--fg);
 		background: linear-gradient(90deg, var(--highlight) 0%, white 1%,  white 99%, var(--highlight) 100%);
 		border-bottom: none;
+	}
+
+	[aria-current] > a {
+		padding: .5em;
+		color: var(--highlight);
 	}
 
 	@media (prefers-color-scheme: dark) {
@@ -52,15 +61,18 @@
 			border-bottom: 2px solid var(--highlight);
 		}
 		[aria-current] {
-			color: var(--fg);
 			background: none;
 			border-bottom: 2px solid var(--highlight);
 		}
-		[aria-current]::before {
+		[aria-current] > a {
+			color: var(--fg);
+		}
+		[aria-current] > a::before {
 			content: ">";
 			display: inline-block;
 			margin: 0 .5em 0 -1em;
 			color: var(--highlight);
+			font-weight: 600;
 		}
 	}
 </style>
@@ -68,8 +80,8 @@
 <nav>
 	<ol>
 		{#each menuItems as page}
-		<li>
-			<a rel=prefetch data-slug="{page.slug}" data-segment="{segment}" aria-current="{segment === page.slug ? 'page' : undefined}" href="{`/${page.slug}`}">{page.link}</a>
+		<li aria-current="{segment === page.slug ? 'page' : undefined}">
+			<a rel=prefetch href="{`/${page.slug}`}">{page.link}</a>
 		</li>
 		{/each}
 	</ol>

@@ -22,14 +22,14 @@
 	*/
 	:global(h1) {
 		font-size: 3rem;
-		font-weight: 700;
+		font-weight: 600;
 		margin: 1.2em 0;
 		padding: 0;
 		color: var(--highlight);
 	}
 	:global(h2) {
 		font-size: 2.4rem;
-		font-weight: 700;
+		font-weight: 600;
 		margin: 1.2em 0 .8em;
 		padding: 0;
 	}

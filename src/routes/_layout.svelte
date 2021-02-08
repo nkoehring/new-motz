@@ -21,8 +21,6 @@
 		width: 474px;
 		height: 100px;
 		margin-left: 320px;
-		mix-blend-mode: lighten;
-		filter: invert();
 	}
 
 	#content-wrapper {
@@ -31,13 +29,18 @@
 		box-sizing: border-box;
 		margin: 0 auto;
 		padding: 4rem 3rem;
-		font-size: 2rem;
 	}
 	main {
 		flex: 0 1 auto;
 		width: calc(78% - 2rem);
 		margin-left: 2rem;
 		text-align: justify;
+	}
+	@media (prefers-color-scheme: dark) {
+		#main-header {
+			mix-blend-mode: lighten;
+			filter: invert();
+		}
 	}
 </style>
 

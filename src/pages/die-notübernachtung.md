@@ -1,6 +1,6 @@
 ---
 title: Die Notübernachtung — motz berlin
-link: Die Notübernachtung
+link: Notübernachtung
 menuPosition: 2
 date: 2021-02-21
 ---
