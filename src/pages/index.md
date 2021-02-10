@@ -3,7 +3,7 @@ title: motz berlin
 link: Startseite
 menuPosition: 1
 date: 2021-02-21
-hero: BMC1617-500x355.jpg
+hero: /media/bmc1617-500x355.jpg
 heroTitle: Bild vom UTW-LKW
 heroPosition: right
 ---
