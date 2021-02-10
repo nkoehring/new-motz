@@ -3,9 +3,14 @@ title: Hilfe braucht Spenden — motz berlin
 link: Geld spenden
 menuPosition: 3
 date: 2021-02-21
+hero: schlafenderobdachloser_530.jpg
+heroTitle: Schlafender Obdachloser
+heroPosition: right
 ---
 
 # Ein Bett im Warmen
+
+<img src="/media/paritaetischer_150.jpg" style="float:right;margin-left:20px;width:150px;height:150px;" alt="Logo Paratätischer Wohlfahrtsverband" />
 
 Zehn, zwanzig oder sogar sechzig Menschen in einem Raum. Schlafen auf dem Fußboden, in schlecht beheizten Räumen, die am nächsten morgen pünktlich um 8 Uhr wieder verlassen werden müssen. Das erwartet wohnungslose Menschen, die in Berlin auf der Suche nach einer Notschlafstelle sind.
 

@@ -1,0 +1,24 @@
+backend:
+	name: github
+	repo: nkoehring/new-motz
+	branch: main
+
+# publish_mode: editorial_workflow
+media_folder: "static/media"
+public_folder: "/media"
+
+collections:
+	- name: "pages"
+		label: "Seite"
+		folder: "src/pages"
+		create: true
+		slug: "{{slug}}"
+		fields:
+			- {label: "Titel", name: "title", widget: "string"}
+			- {label: "Menübezeichnung", name: "link", widget: "string"}
+			- {label: "Menüposition", name: "menuPosition", widget: "number"}
+			- {label: "Veröffentlicht am", name: "date", widget: "date"}
+			- {label: "Hauptbild", name: "hero", widget: "image"}
+			- {label: "Bildtitel", name: "heroTitle", widget: "string"}
+			- {label: "Bildposition", name: "heroPosition", widget: "select", options: [{ label: "Links", value: "left" }, { label: "Mittig", value: "center" }, { label: "Rechts", value: "right" }, ]}
+			- {label: "Body", name: "body", widget: "markdown"}
