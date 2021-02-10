@@ -3,7 +3,7 @@ title: Die Notübernachtung — motz berlin
 link: Notübernachtung
 menuPosition: 2
 date: 2021-02-21
-hero: wohnprojekt01.jpg
+hero: /media/wohnprojekt01.jpg
 heroTitle: Die Notübernachtung in der Weserstraße
 heroPosition: right
 ---
