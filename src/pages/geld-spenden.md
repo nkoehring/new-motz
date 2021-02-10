@@ -3,7 +3,7 @@ title: Hilfe braucht Spenden — motz berlin
 link: Geld spenden
 menuPosition: 3
 date: 2021-02-21
-hero: schlafenderobdachloser_530.jpg
+hero: /media/schlafenderobdachloser_530.jpg
 heroTitle: Schlafender Obdachloser
 heroPosition: right
 ---
