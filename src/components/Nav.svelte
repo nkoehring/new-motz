@@ -4,6 +4,8 @@
 
   let menuItems = [...pages]
 	menuItems.sort((pageA, pageB) => pageA.menuPosition - pageB.menuPosition)
+
+	$: currentPage = segment === undefined ? 'index' : segment
 </script>
 
 <style>
@@ -80,8 +82,8 @@
 <nav>
 	<ol>
 		{#each menuItems as page}
-		<li aria-current="{segment === page.slug ? 'page' : undefined}">
-			<a rel=prefetch href="{`/${page.slug}`}">{page.link}</a>
+		<li aria-current="{ currentPage === page.slug ? 'page' : undefined }">
+			<a rel=prefetch href="{`/${page.slug !== 'index' ? page.slug : ''}`}">{page.link}</a>
 		</li>
 		{/each}
 	</ol>

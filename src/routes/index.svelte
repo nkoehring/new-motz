@@ -1,13 +1,18 @@
-<script>
-	import { pages } from '../pages'
+<script context="module">
+	import { findPage } from '../pages'
+
+	export function preload() {
+		const page = findPage('index')
+		return { page }
+	}
 </script>
 
-<h1>pages for debugging</h1>
+<script>
+	export let page;
+</script>
 
-{#each pages as page}
-	<article>
-		<a href={`/${page.slug}`}>
-			<h2>{page.title}</h2>
-		</a>
-	</article>
-{/each}
+<svelte:head>
+	<title>{page.title}</title>
+</svelte:head>
+
+{@html page.html}
