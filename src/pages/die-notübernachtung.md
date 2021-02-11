@@ -13,8 +13,6 @@ heroPosition: right
 
 Seit 30 Jahren fördert die für den Sozialbereich in Berlin zuständige Senatsverwaltung niedrig­schwel­lige Angebote der Wohnungs­losenhilfe. Dazu gehören u.a. Tagesstätten, Treffpunkte, Nachtcafes und Notübernachtungen. Vor allem im Bereich der Notschlafstellen deckt das Angebot jedoch nicht den tatsächlichen Bedarf. Der motz & Co... e.V. bietet deshalb seit 1995 - ohne staatliche Förderung - wohnungslosen Menschen Übernachtungsplätze an. 
 
-![Die Notübernachtung in der Weserstraße](/media/wohnprojekt01.jpg "Die Notübernachtung in der Weserstraße")
-
 Ins Leben gerufen wurde die Einrichtung zeitgleich mit dem Magazin motz. Denn neben der finanziellen Soforthilfe durch die Möglichkeit des Zeitungsverkaufs will **motz & Co... e.V.** für wohnungslose und suchtkranke Menschen auch ein konkretes soziales Angebot machen. Dabei geht motz bewusst weit über den üblichen Hilferahmen in Notübernachtungen hinaus.
 
 ## Angebote u.a.
