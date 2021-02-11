@@ -2,15 +2,11 @@
 title: Hilfe braucht Spenden — motz berlin
 link: Geld spenden
 menuPosition: 3
-date: 2021-02-21
-hero: /media/schlafenderobdachloser_530.jpg
-heroTitle: Schlafender Obdachloser
-heroPosition: right
 ---
 
 # Ein Bett im Warmen
 
-<img src="/media/paritaetischer_150.jpg" style="float:right;margin-left:20px;width:150px;height:150px;" alt="Logo Paratätischer Wohlfahrtsverband" />
+<img src="/media/paritaetischer_150.jpg" alt="Logo Paratätischer Wohlfahrtsverband" width="150" />
 
 Zehn, zwanzig oder sogar sechzig Menschen in einem Raum. Schlafen auf dem Fußboden, in schlecht beheizten Räumen, die am nächsten morgen pünktlich um 8 Uhr wieder verlassen werden müssen. Das erwartet wohnungslose Menschen, die in Berlin auf der Suche nach einer Notschlafstelle sind.
 
@@ -21,6 +17,8 @@ Schon mit 5 Euro pro Monat können Sie dabei helfen, dass wohnungslose und sucht
  * mit drei Mahlzeiten pro Tag versorgt werden
  * über ausreichend Kleidung verfügen
  * Hilfe bei der Rückkehr in Regelversorgungssysteme, wie Wohnung, Gesundheitsversorgung und Beschäftigung erhalten
+
+<img src="/media/schlafenderobdachloser_530.jpg" alt="Schlafender Obdachloser" width="320" />
 
 Unterstützen Sie den **motz & Co... e.V.** mit einer Spende für "Ein Bett im Warmen". Sie gewährleisten dadurch die Aufrechterhaltung unserer Notübernachtung. Für nur 5 Euro im Monat können Sie helfen, einem wohnungslosen Menschen in unserer Notübernachtung ein warmes Bett, Schutz und ein wenig Geborgenheit. Bitte füllen Sie das unten stehende Onlineformular aus und überweisen Sie Ihre Spende an:
 
