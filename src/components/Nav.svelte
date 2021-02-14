@@ -1,11 +1,20 @@
 <script>
-	export let segment
+	import { stores } from '@sapper/app';
+
 	export let pages
 
-  let menuItems = [...pages]
-	menuItems.sort((pageA, pageB) => pageA.menuPosition - pageB.menuPosition)
+	const { page } = stores()
+	let showMenu = false
+	let currentPage = 'index'
 
-	$: currentPage = segment === undefined ? 'index' : segment
+	page.subscribe(({ path }) => {
+		showMenu = false // toggle menu on page change
+		currentPage = path === '/' ? 'index' : path.slice(1)
+	})
+
+
+	let menuItems = [...pages]
+	menuItems.sort((pageA, pageB) => pageA.menuPosition - pageB.menuPosition)
 </script>
 
 <style>
@@ -13,6 +22,10 @@
 		flex: 1 1 auto;
 		background: var(--highlight);
 		color: var(--bg);
+		z-index: 1;
+	}
+	#nav-toggle, label[for="nav-toggle"] {
+		display: none;
 	}
 
 	ol {
@@ -77,9 +90,39 @@
 			font-weight: 600;
 		}
 	}
+	@media screen and (max-width: 650px) {
+		label[for="nav-toggle"] {
+			display: block;
+			position: absolute;
+			right: -5.0rem;
+			height: 4.6rem;
+			font-size: 2em;
+			background: var(--bg);
+			border-right: 5px solid var(--bg);
+			cursor: pointer;
+		}
+		nav {
+			--width: calc(100vw - 2rem - 5px);
+			position: fixed;
+			width: var(--width);
+			height: calc(100vh - 16rem);
+			left: 0;
+			top: 0;
+			margin-top: 16rem;
+			padding-left: 2rem;
+			border-right: 5px solid var(--highlight);
+			transition: transform .3s ease-out;
+			transform: translate(-100vw);
+		}
+		#nav-toggle:checked + nav {
+			transform: translate(0);
+		}
+	}
 </style>
 
+<input type="checkbox" id="nav-toggle" bind:checked={showMenu} />
 <nav>
+	<label for="nav-toggle">×&nbsp;&nbsp;☰</label>
 	<ol>
 		{#each menuItems as page}
 		<li aria-current="{ currentPage === page.slug ? 'page' : undefined }">

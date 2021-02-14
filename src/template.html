@@ -38,6 +38,7 @@
 		--important: #D54043;
 		--bg: #FFF;
 		--fg: #444;
+		--small-display: 650px;
 		font-size: 10px;
 	}
 	@media (prefers-color-scheme: dark) {
@@ -89,9 +90,23 @@
 		margin-top: 0;
 	}
 	img {
+		max-width: 100vw;
 		float: right;
 		border: none;
 		margin: .2em 0 0 .5em;
+	}
+	@media screen and (max-width: 650px) {
+		img {
+			display: block;
+			float: none;
+			margin: 0 0 1em 0;
+		}
+	}
+	@media screen and (max-width: 419px) {
+		img {
+			width: 100vw;
+			margin-left: -3rem;
+		}
 	}
 	</style>
 	%sapper.styles%

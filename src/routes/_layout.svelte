@@ -2,8 +2,6 @@
 	import { pages } from '../pages'
 	import HeaderImage from 'images/motz-header.jpg'
 	import Nav from '../components/Nav.svelte'
-
-	export let segment
 </script>
 
 <style>
@@ -19,8 +17,9 @@
 
 	#main-header {
 		width: 474px;
-		height: 100px;
-		margin-left: 320px;
+		max-width: 100vw;
+		margin-left: 380px;
+		float: none;
 	}
 
 	#content-wrapper {
@@ -36,10 +35,17 @@
 		margin-left: 2rem;
 		text-align: justify;
 	}
-	@media (prefers-color-scheme: dark) {
+	@media screen and (prefers-color-scheme: dark) {
 		#main-header {
 			mix-blend-mode: lighten;
 			filter: invert();
+		}
+	}
+
+	@media screen and (max-width: 650px) {
+		main, #main-header {
+			width: 100%;
+			margin-left: 0;
 		}
 	}
 </style>
@@ -50,7 +56,7 @@
 </header>
 
 <div id="content-wrapper">
-	<Nav {segment} {pages} />
+	<Nav {pages} />
 
 	<main>
 		<slot></slot>
